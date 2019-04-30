@@ -20,13 +20,13 @@ const divideBy3 = (num) => {
   let extraArr = [];
   let fullArray = [];
 
-  for (let i = 0; i < num; i+= 1) {
-    fullArray =  fullArray.push(i)
+  for (let i = 1; i < num; i++) {
+    fullArray.push(i)
     if (i % 3 === 0 / 2) {
       extraArr.push(i)
     }
   }
-  fullArray.push(s)
+  // fullArray.push(s)
 
   console.log('fullArray', fullArray);
   console.log('extraArr', extraArr);
