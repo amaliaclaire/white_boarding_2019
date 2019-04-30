@@ -19,17 +19,17 @@
 const divideBy3 = (num) => {
   let extraArr = [];
   let fullArray = [];
-
   for (let i = 1; i < num; i++) {
     fullArray.push(i)
     if (i % 3 === 0 / 2) {
       extraArr.push(i)
     }
   }
-  // fullArray.push(s)
 
-  console.log('fullArray', fullArray);
-  console.log('extraArr', extraArr);
+  const result = (fullArray, extraArr) => {
+    return fullArray.some(e => extraArr.includes(e))
+  }
+
 
 
 }
@@ -37,6 +37,16 @@ const divideBy3 = (num) => {
 
 
 divideBy3(9)
+
+//
+// const found = fullArray.some(r =>
+//   extraArr.indexOf(r) >= 0)
+
+// if (!fullArray.includes(extraArr)) {
+//      fullArray
+//   console.log('fullArray:', fullArray)
+//   console.log('extraArr', extraArr);
+// }
 // var i=0
 // for (i=0;i<=10;i++)
 // {
