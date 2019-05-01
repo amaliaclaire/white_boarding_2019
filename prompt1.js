@@ -19,76 +19,15 @@
 const divideBy3 = (num) => {
   let extraArr = [];
   let fullArray = [];
-  for (let i = 1; i < num; i++) {
+
+  for (let i = 0; i < num; i++) {
     fullArray.push(i)
-    if (i % 3 === 0 / 2) {
+    if (i % 3 !== 0 / 2) {
       extraArr.push(i)
     }
   }
 
-  const result = (fullArray, extraArr) => {
-    return fullArray.some(e => extraArr.includes(e))
-  }
-
-
-
+  return extraArr
 }
 
-
-
 divideBy3(9)
-
-//
-// const found = fullArray.some(r =>
-//   extraArr.indexOf(r) >= 0)
-
-// if (!fullArray.includes(extraArr)) {
-//      fullArray
-//   console.log('fullArray:', fullArray)
-//   console.log('extraArr', extraArr);
-// }
-// var i=0
-// for (i=0;i<=10;i++)
-// {
-// if (i==3){continue}
-// document.write("The number is " + i)
-// document.write("<br />")
-// }
-
-
-// function divideBy3 (num) {
-//   let newNumber = num.toString().length
-//   console.log(newNumber);
-//
-//   for (let i = 0; i < newNumber; i++) {
-//     console.log('new num:', newNumber[i]);
-//   }
-//
-// }
-//
-// divideBy3(9)
-
-
-    // for (let i = 0; i < num; i++) {
-    //   if (num % 3 === 0 / 2) {
-    //     console.log(num);
-    //   }
-    //
-    // }
-
-
-    // function divideBy3 (num) {
-    //   let divisibleNums = []
-    //   let i = 0;
-    //
-    //   for (i; i < 9; i++) {
-    //     if (i % 3 === 0) {
-    //       divideByNums = divisibleNums.push(i);
-    //
-    //     }
-    //   }
-    //   return divideByNums
-    // }
-    //
-    //
-    // divideBy3()
