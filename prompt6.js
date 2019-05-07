@@ -13,8 +13,8 @@
 // once you have been able to find that indexOf() then push the elements into
 // an empty arra
 
-// 1. find the length of M
-// 2. find what is divisible in the length of M by N
+// 1. find the length of M *
+// 2. find what is divisible in the length of M by N (modoulo)
 // 3. print out the index characters in M.length into an empty array
 
 
@@ -23,19 +23,19 @@
 const characterByIndex = (n, m) => {
   let emptyArr = []
   let searchChar = n
-  let indexOfChar = []
-  let count = 0
+  let strLength = 0
 
 
 
   for (let i = 0; i <= m.length; i++) {
-    count = i
+    strLength = i
+    if(strLength % n === 0) {
+      console.log('strLength:', strLength);
+    }
   }
 
 
-  if (n % count === 0) {
 
-  }
 }
 
 characterByIndex(3, 'galvanize')
